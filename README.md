@@ -13,15 +13,13 @@ $sudo pkg install zebra-server
 
 Получить исходные тексты программы:
 
-```
-#!sh
+```sh
 $git https://github.com/komlog/idzebra-contrib-vhosts.git
 ```
 
 Выполнить конфигурирование и сборку программы:
 
-```
-#!sh
+```sh
 $cd idzebra-contrib-vhosts
 $sh build.sh
 $./configure
@@ -30,14 +28,12 @@ $make
 
 Перед установкой программы в систему необходимо убедиться, что используется последняя конфигурация программы:
 
-```
-#!sh
+```sh
 $make clean
 ```
 
 От имени суперпользователя установить программу в систему:
 
-```
-#!sh
+```sh
 $sudo make install
 ```
